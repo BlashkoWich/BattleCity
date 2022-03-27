@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6167580079311292979}
   - component: {fileID: 2039049854407633424}
   - component: {fileID: 8545105834421665589}
+  - component: {fileID: 145851476223649966}
   m_Layer: 0
   m_Name: TowerBlackSprite
   m_TagString: Untagged
@@ -123,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d244f587b62fb4f8c6070c0814e7f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInvulnerability: 0
 --- !u!114 &62907680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +190,18 @@ MonoBehaviour:
   _team: 1
   _maxHealth: 2
   _damage: 1
+--- !u!114 &145851476223649966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7568435725800954823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f765f00ffcdaf38469942ead89959315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &209010294101893521
 PrefabInstance:
   m_ObjectHideFlags: 0

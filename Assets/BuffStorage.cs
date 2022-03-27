@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(BuffReciever))]
 public class BuffStorage : MonoBehaviour
 {
+    public event Action<BuffDealer> TakeBuff;
     private BuffInvulnerability _buffInvulnerability;
     private BuffFastReloader _buffFastReloader;
 
@@ -37,5 +39,6 @@ public class BuffStorage : MonoBehaviour
                 _buffInvulnerability.ActivateBuff(buffDealer.TimeToDebuff);
                 break;
         }
+        TakeBuff?.Invoke(buffDealer);
     }
 }
